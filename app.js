@@ -41,6 +41,9 @@ app.get('/' , async (req , res)=>{
 
 app.post('/' ,async (req, res)=>{
     let longOne = req.body.longUrl;
+    if(longOne=""){
+        res.redirect("/")
+    }
     await shortUrl.create({full : longOne});
     res.redirect('/');
       
