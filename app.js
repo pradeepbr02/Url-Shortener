@@ -58,6 +58,14 @@ app.get("/:shortid" , (req , res)=>{
 })
 
 
+app.post('/delete' , async (req , res)=>{
+    let collectData = await shortUrl.find({} );
+    if(collectData){
+       await shortUrl.deleteMany({});
+    }
+    res.redirect('/')
+})
+
 app.listen(5000 , ()=>{
     console.log("Server is running");
 })

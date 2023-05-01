@@ -100,3 +100,25 @@ input{
 a{
     text-decoration: none;
 }
+.deleteUrls{
+   position: absolute;
+   left: -50%;
+
+}
+.delBtn{
+    position: relative;
+    left: 49%;
+    transform: translate(-50px, 20px);
+    width: 20vh;
+    height: 5vh;
+    border-radius: 0.5rem;
+    padding : 5px 10px 5px 10px;
+    font-family: 'Manrope', sans-serif;
+    background: red;
+    color: black;
+}
+
+.delBtn:hover{
+    color: aliceblue;
+    box-shadow: 1px 2px 3px;
+}
